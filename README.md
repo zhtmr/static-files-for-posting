@@ -5,3 +5,4 @@
 
 ## To-do
 - github actions : 푸시되면 리드미에 api url 반환 후 커밋
+  - csv 테이블 형식으로 드래그해서 바로 쓸 수 있게..
