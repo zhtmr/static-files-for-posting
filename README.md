@@ -8,4 +8,4 @@
   - csv 테이블 형식으로 드래그해서 바로 쓸 수 있게..
   - |파일 제목|[![]]() 포맷|
     |------|---|---|
-    |test.png|[![]https://raw.githubusercontent.com/zhtmr/static-files-for-posting/{branch}/{filePath}](javascript:return false;)|테스트3|
+    |test.png|`[![]https://raw.githubusercontent.com/zhtmr/static-files-for-posting/{branch}/{filePath}](javascript:return false;)`|테스트3|
