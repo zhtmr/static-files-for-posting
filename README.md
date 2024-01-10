@@ -10,3 +10,4 @@
     |------|---|
     |test.png|`[![]https://raw.githubusercontent.com/zhtmr/static-files-for-posting/{branch}/{filePath}](javascript:return false;)`|
 
+- vercel : 웹에서 
