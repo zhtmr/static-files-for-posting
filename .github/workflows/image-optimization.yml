@@ -1,9 +1,7 @@
 name: Optimize Images
 
 on:
-  push:
-    branches:
-      - main  # main 브랜치에 푸시할 때 동작합니다. 다른 브랜치도 추가 가능.
+ pull_request:
     paths:
       - '**/*.png'
       - '**/*.jpg'
