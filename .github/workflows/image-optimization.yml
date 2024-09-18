@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run Image Actions
-        uses: calibreapp/image-actions@v1.2.3
+        uses: calibreapp/image-actions@1.1.0
         with:
           compress_png: true  # PNG 이미지 압축
           compress_jpg: true  # JPG 이미지 압축
