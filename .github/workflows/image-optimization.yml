@@ -1,0 +1,36 @@
+name: Optimize Images
+
+on:
+  push:
+    branches:
+      - main  # main 브랜치에 푸시할 때 동작합니다. 다른 브랜치도 추가 가능.
+    paths:
+      - '**/*.png'
+      - '**/*.jpg'
+      - '**/*.jpeg'
+      - '**/*.gif'
+
+jobs:
+  optimize-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run Image Actions
+        uses: calibreapp/image-actions@v1.2.3
+        with:
+          compress_png: true  # PNG 이미지 압축
+          compress_jpg: true  # JPG 이미지 압축
+          compress_gif: true  # GIF 이미지 압축
+          jpeg_quality: 85    # JPEG 압축 품질 설정
+          png_quality: 85     # PNG 압축 품질 설정
+
+      - name: Commit optimized images
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "github-actions@github.com"
+          git add .
+          git commit -m "Optimize images"
+      - name: Push changes
+        run: git push
