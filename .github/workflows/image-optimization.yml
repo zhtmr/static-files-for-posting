@@ -25,12 +25,13 @@ jobs:
           compress_gif: true  # GIF 이미지 압축
           jpeg_quality: 85    # JPEG 압축 품질 설정
           png_quality: 85     # PNG 압축 품질 설정
-
-      - name: Commit optimized images
-        run: |
-          git config --local user.name "github-actions"
-          git config --local user.email "github-actions@github.com"
-          git add .
-          git commit -m "Optimize images"
-      - name: Push changes
-        run: git push
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+      
+      # - name: Commit optimized images
+      #   run: |
+      #     git config --local user.name "github-actions"
+      #     git config --local user.email "github-actions@github.com"
+      #     git add .
+      #     git commit -m "Optimize images"
+      # - name: Push changes
+      #   run: git push
