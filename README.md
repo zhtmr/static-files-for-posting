@@ -1,5 +1,7 @@
 # static-files-for-posting
-블로그 포스팅에 쓰일 파일 저장소
+블로그 포스팅에 쓰일 파일 저장소   
+🔗 https://zhtmr.github.io/static-files-for-posting/
+
 
 > [!NOTE]  
 > url 주소 github pages 로 변경!
