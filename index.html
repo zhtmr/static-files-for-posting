@@ -1,0 +1,621 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>날짜별 이미지 보기</title>
+  <style>
+    body { font-family: sans-serif; padding: 1rem; background: #f4f4f4; }
+    .date-button { cursor: pointer; padding: 0.5rem; margin: 0.25rem; background: #eee; border: 1px solid #ccc; display: inline-block; }
+    .date-button:hover { background: #ddd; }
+    .image-container { margin-top: 1rem; display: none; }
+    img { max-width: 300px; display: block; margin-bottom: 0.5rem; }
+    .path { font-size: 0.9em; background: #fff; padding: 0.3rem; border: 1px solid #ccc; word-break: break-all; }
+  </style>
+</head>
+<body>
+  <h1>날짜별 이미지 인덱스</h1>
+<div class='date-button' onclick="toggle('12-19')">📅 12-19</div>
+<div id='12-19' class='image-container'>
+<img src='images/12-19/classdiagram.png' alt='classdiagram.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/12-19/classdiagram.png</div>
+<img src='images/12-19/java-api.png' alt='java-api.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/12-19/java-api.png</div>
+</div>
+<div class='date-button' onclick="toggle('20231220')">📅 20231220</div>
+<div id='20231220' class='image-container'>
+<img src='images/20231220/interface-extends.png' alt='interface-extends.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231220/interface-extends.png</div>
+<img src='images/20231220/interface-with-abstract.png' alt='interface-with-abstract.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231220/interface-with-abstract.png</div>
+</div>
+<div class='date-button' onclick="toggle('20231221')">📅 20231221</div>
+<div id='20231221' class='image-container'>
+<img src='images/20231221/hashmap-put.png' alt='hashmap-put.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231221/hashmap-put.png</div>
+<img src='images/20231221/hash.png' alt='hash.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231221/hash.png</div>
+<img src='images/20231221/equals-method.png' alt='equals-method.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231221/equals-method.png</div>
+<img src='images/20231221/hashmap-hash.png' alt='hashmap-hash.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231221/hashmap-hash.png</div>
+<img src='images/20231221/hashcode-method.png' alt='hashcode-method.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231221/hashcode-method.png</div>
+<img src='images/20231221/equals-api-doc.png' alt='equals-api-doc.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231221/equals-api-doc.png</div>
+</div>
+<div class='date-button' onclick="toggle('20231229')">📅 20231229</div>
+<div id='20231229' class='image-container'>
+<img src='images/20231229/ListIterator2.png' alt='ListIterator2.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231229/ListIterator2.png</div>
+<img src='images/20231229/innerclass-listiterator.png' alt='innerclass-listiterator.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231229/innerclass-listiterator.png</div>
+<img src='images/20231229/static-nested-class.png' alt='static-nested-class.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231229/static-nested-class.png</div>
+<img src='images/20231229/ListIterator.png' alt='ListIterator.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231229/ListIterator.png</div>
+<img src='images/20231229/iterable.png' alt='iterable.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231229/iterable.png</div>
+<img src='images/20231229/innerclass-byte.png' alt='innerclass-byte.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231229/innerclass-byte.png</div>
+<img src='images/20231229/cant-accsess.png' alt='cant-accsess.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231229/cant-accsess.png</div>
+<img src='images/20231229/iterator.png' alt='iterator.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20231229/iterator.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240103')">📅 20240103</div>
+<div id='20240103' class='image-container'>
+<img src='images/20240103/write-jni.png' alt='write-jni.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240103/write-jni.png</div>
+<img src='images/20240103/io-flow.png' alt='io-flow.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240103/io-flow.png</div>
+<img src='images/20240103/data-persist.png' alt='data-persist.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240103/data-persist.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240104')">📅 20240104</div>
+<div id='20240104' class='image-container'>
+<img src='images/20240104/buffered-stream.png' alt='buffered-stream.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240104/buffered-stream.png</div>
+<img src='images/20240104/seagate-hard-drive-inside-getty-images-57c76bf35f9b5829f4bdc662.webp' alt='seagate-hard-drive-inside-getty-images-57c76bf35f9b5829f4bdc662.webp' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240104/seagate-hard-drive-inside-getty-images-57c76bf35f9b5829f4bdc662.webp</div>
+<img src='images/20240104/hdd-4313739_640.jpg' alt='hdd-4313739_640.jpg' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240104/hdd-4313739_640.jpg</div>
+<img src='images/20240104/buffer.png' alt='buffer.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240104/buffer.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240105')">📅 20240105</div>
+<div id='20240105' class='image-container'>
+<img src='images/20240105/diagram2.png' alt='diagram2.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240105/diagram2.png</div>
+<img src='images/20240105/diagram.png' alt='diagram.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240105/diagram.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240108')">📅 20240108</div>
+<div id='20240108' class='image-container'>
+<img src='images/20240108/데코레이터패턴.drawio.png' alt='데코레이터패턴.drawio.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240108/데코레이터패턴.drawio.png</div>
+<img src='images/20240108/classdiagram.png' alt='classdiagram.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240108/classdiagram.png</div>
+<img src='images/20240108/aggregation.png' alt='aggregation.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240108/aggregation.png</div>
+<img src='images/20240108/Welcome_To_littleBits.gif' alt='Welcome_To_littleBits.gif' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240108/Welcome_To_littleBits.gif</div>
+</div>
+<div class='date-button' onclick="toggle('20240109')">📅 20240109</div>
+<div id='20240109' class='image-container'>
+<img src='images/20240109/lazy-eval.gif' alt='lazy-eval.gif' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240109/lazy-eval.gif</div>
+<img src='images/20240109/eager-eval.gif' alt='eager-eval.gif' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240109/eager-eval.gif</div>
+</div>
+<div class='date-button' onclick="toggle('20240115')">📅 20240115</div>
+<div id='20240115' class='image-container'>
+<img src='images/20240115/gh-cli.png' alt='gh-cli.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240115/gh-cli.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240116')">📅 20240116</div>
+<div id='20240116' class='image-container'>
+<img src='images/20240116/gson.png' alt='gson.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240116/gson.png</div>
+<img src='images/20240116/getParameterType.png' alt='getParameterType.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240116/getParameterType.png</div>
+<img src='images/20240116/proxy-pattern.png' alt='proxy-pattern.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240116/proxy-pattern.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240117')">📅 20240117</div>
+<div id='20240117' class='image-container'>
+<img src='images/20240117/proxy-diagram.png' alt='proxy-diagram.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240117/proxy-diagram.png</div>
+<img src='images/20240117/previous-dao.png' alt='previous-dao.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240117/previous-dao.png</div>
+<img src='images/20240117/injection.png' alt='injection.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240117/injection.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240118')">📅 20240118</div>
+<div id='20240118' class='image-container'>
+<img src='images/20240118/jdk-dynamic-proxy1.png' alt='jdk-dynamic-proxy1.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240118/jdk-dynamic-proxy1.png</div>
+<img src='images/20240118/proxy-server.jpeg' alt='proxy-server.jpeg' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240118/proxy-server.jpeg</div>
+</div>
+<div class='date-button' onclick="toggle('20240124')">📅 20240124</div>
+<div id='20240124' class='image-container'>
+<img src='images/20240124/thread_processes.jpg' alt='thread_processes.jpg' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240124/thread_processes.jpg</div>
+<img src='images/20240124/race-condition.gif' alt='race-condition.gif' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240124/race-condition.gif</div>
+<img src='images/20240124/race_condition.png' alt='race_condition.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240124/race_condition.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240213')">📅 20240213</div>
+<div id='20240213' class='image-container'>
+<img src='images/20240213/serverapp-log.png' alt='serverapp-log.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240213/serverapp-log.png</div>
+<img src='images/20240213/threadLocal.png' alt='threadLocal.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240213/threadLocal.png</div>
+<img src='images/20240213/processlist.png' alt='processlist.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240213/processlist.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240511')">📅 20240511</div>
+<div id='20240511' class='image-container'>
+<img src='images/20240511/cache hit:miss.png' alt='cache hit:miss.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240511/cache hit:miss.png</div>
+<img src='images/20240511/redis-stack queue.png' alt='redis-stack queue.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240511/redis-stack queue.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240622')">📅 20240622</div>
+<div id='20240622' class='image-container'>
+<img src='images/20240622/img_3.png' alt='img_3.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240622/img_3.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240624')">📅 20240624</div>
+<div id='20240624' class='image-container'>
+<img src='images/20240624/패키지구조.png' alt='패키지구조.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240624/패키지구조.png</div>
+<img src='images/20240624/어댑터패턴_사진1.png' alt='어댑터패턴_사진1.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240624/어댑터패턴_사진1.png</div>
+<img src='images/20240624/HandlerAdapter.png' alt='HandlerAdapter.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240624/HandlerAdapter.png</div>
+<img src='images/20240624/adapter-pattern.drawio.png' alt='adapter-pattern.drawio.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240624/adapter-pattern.drawio.png</div>
+<img src='images/20240624/adapter_in_java.png' alt='adapter_in_java.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240624/adapter_in_java.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240629')">📅 20240629</div>
+<div id='20240629' class='image-container'>
+<img src='images/20240629/prototype-pattern.drawio.png' alt='prototype-pattern.drawio.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240629/prototype-pattern.drawio.png</div>
+<img src='images/20240629/jni.png' alt='jni.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240629/jni.png</div>
+<img src='images/20240629/arraylist-cloneable.png' alt='arraylist-cloneable.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240629/arraylist-cloneable.png</div>
+<img src='images/20240629/prototype-comic-1-ko-2x.png' alt='prototype-comic-1-ko-2x.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240629/prototype-comic-1-ko-2x.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240722')">📅 20240722</div>
+<div id='20240722' class='image-container'>
+<img src='images/20240722/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240722/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240723')">📅 20240723</div>
+<div id='20240723' class='image-container'>
+<img src='images/20240723/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240723/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240724')">📅 20240724</div>
+<div id='20240724' class='image-container'>
+<img src='images/20240724/img_4.png' alt='img_4.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240724/img_4.png</div>
+<img src='images/20240724/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240724/ex.png</div>
+<img src='images/20240724/timsort.png' alt='timsort.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240724/timsort.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240725')">📅 20240725</div>
+<div id='20240725' class='image-container'>
+<img src='images/20240725/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240725/ex.png</div>
+<img src='images/20240725/split.png' alt='split.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240725/split.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240726')">📅 20240726</div>
+<div id='20240726' class='image-container'>
+<img src='images/20240726/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240726/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240727')">📅 20240727</div>
+<div id='20240727' class='image-container'>
+<img src='images/20240727/clothes.png' alt='clothes.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240727/clothes.png</div>
+<img src='images/20240727/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240727/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240728')">📅 20240728</div>
+<div id='20240728' class='image-container'>
+<img src='images/20240728/8.png' alt='8.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240728/8.png</div>
+<img src='images/20240728/9.png' alt='9.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240728/9.png</div>
+<img src='images/20240728/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240728/ex.png</div>
+<img src='images/20240728/12.png' alt='12.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240728/12.png</div>
+<img src='images/20240728/13.png' alt='13.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240728/13.png</div>
+<img src='images/20240728/11.png' alt='11.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240728/11.png</div>
+<img src='images/20240728/10.png' alt='10.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240728/10.png</div>
+<img src='images/20240728/4.png' alt='4.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240728/4.png</div>
+<img src='images/20240728/5.png' alt='5.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240728/5.png</div>
+<img src='images/20240728/7.png' alt='7.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240728/7.png</div>
+<img src='images/20240728/6.png' alt='6.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240728/6.png</div>
+<img src='images/20240728/2.png' alt='2.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240728/2.png</div>
+<img src='images/20240728/3.png' alt='3.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240728/3.png</div>
+<img src='images/20240728/1.png' alt='1.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240728/1.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240729')">📅 20240729</div>
+<div id='20240729' class='image-container'>
+<img src='images/20240729/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240729/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240730')">📅 20240730</div>
+<div id='20240730' class='image-container'>
+<img src='images/20240730/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240730/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240731')">📅 20240731</div>
+<div id='20240731' class='image-container'>
+<img src='images/20240731/binary-search-tree-sorted-array-animation.gif' alt='binary-search-tree-sorted-array-animation.gif' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240731/binary-search-tree-sorted-array-animation.gif</div>
+<img src='images/20240731/img_6.png' alt='img_6.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240731/img_6.png</div>
+<img src='images/20240731/img_5.png' alt='img_5.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240731/img_5.png</div>
+<img src='images/20240731/natural_ordering.png' alt='natural_ordering.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240731/natural_ordering.png</div>
+<img src='images/20240731/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240731/ex.png</div>
+<img src='images/20240731/img_8.png' alt='img_8.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240731/img_8.png</div>
+<img src='images/20240731/treemap.png' alt='treemap.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240731/treemap.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240801')">📅 20240801</div>
+<div id='20240801' class='image-container'>
+<img src='images/20240801/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240801/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240802')">📅 20240802</div>
+<div id='20240802' class='image-container'>
+<img src='images/20240802/img_3.png' alt='img_3.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240802/img_3.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240803')">📅 20240803</div>
+<div id='20240803' class='image-container'>
+<img src='images/20240803/binary-and-linear-search-animations.gif' alt='binary-and-linear-search-animations.gif' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240803/binary-and-linear-search-animations.gif</div>
+<img src='images/20240803/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240803/ex.png</div>
+<img src='images/20240803/arrays_binarysearch.png' alt='arrays_binarysearch.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240803/arrays_binarysearch.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240804')">📅 20240804</div>
+<div id='20240804' class='image-container'>
+<img src='images/20240804/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240804/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240805')">📅 20240805</div>
+<div id='20240805' class='image-container'>
+<img src='images/20240805/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240805/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240806')">📅 20240806</div>
+<div id='20240806' class='image-container'>
+<img src='images/20240806/result2.png' alt='result2.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240806/result2.png</div>
+<img src='images/20240806/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240806/ex.png</div>
+<img src='images/20240806/result.png' alt='result.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240806/result.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240807')">📅 20240807</div>
+<div id='20240807' class='image-container'>
+<img src='images/20240807/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240807/ex.png</div>
+<img src='images/20240807/dfs.png' alt='dfs.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240807/dfs.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240808')">📅 20240808</div>
+<div id='20240808' class='image-container'>
+<img src='images/20240808/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240808/ex.png</div>
+<img src='images/20240808/dxdy.png' alt='dxdy.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240808/dxdy.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240809')">📅 20240809</div>
+<div id='20240809' class='image-container'>
+<img src='images/20240809/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240809/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240810')">📅 20240810</div>
+<div id='20240810' class='image-container'>
+<img src='images/20240810/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240810/ex.png</div>
+<img src='images/20240810/1924.png' alt='1924.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240810/1924.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240811')">📅 20240811</div>
+<div id='20240811' class='image-container'>
+<img src='images/20240811/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240811/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240812')">📅 20240812</div>
+<div id='20240812' class='image-container'>
+<img src='images/20240812/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240812/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240813')">📅 20240813</div>
+<div id='20240813' class='image-container'>
+<img src='images/20240813/65.png' alt='65.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240813/65.png</div>
+<img src='images/20240813/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240813/ex.png</div>
+<img src='images/20240813/65-1.png' alt='65-1.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240813/65-1.png</div>
+<img src='images/20240813/fail.png' alt='fail.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240813/fail.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240814')">📅 20240814</div>
+<div id='20240814' class='image-container'>
+<img src='images/20240814/ex2.png' alt='ex2.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240814/ex2.png</div>
+<img src='images/20240814/ex1.png' alt='ex1.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240814/ex1.png</div>
+<img src='images/20240814/res.png' alt='res.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240814/res.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240815')">📅 20240815</div>
+<div id='20240815' class='image-container'>
+<img src='images/20240815/ex2.png' alt='ex2.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240815/ex2.png</div>
+<img src='images/20240815/ex1.png' alt='ex1.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240815/ex1.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240816')">📅 20240816</div>
+<div id='20240816' class='image-container'>
+<img src='images/20240816/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240816/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240817')">📅 20240817</div>
+<div id='20240817' class='image-container'>
+<img src='images/20240817/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240817/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240818')">📅 20240818</div>
+<div id='20240818' class='image-container'>
+<img src='images/20240818/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240818/ex.png</div>
+<img src='images/20240818/ex2.png' alt='ex2.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240818/ex2.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240819')">📅 20240819</div>
+<div id='20240819' class='image-container'>
+<img src='images/20240819/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240819/ex.png</div>
+<img src='images/20240819/lis.png' alt='lis.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240819/lis.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240820')">📅 20240820</div>
+<div id='20240820' class='image-container'>
+<img src='images/20240820/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240820/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240821')">📅 20240821</div>
+<div id='20240821' class='image-container'>
+<img src='images/20240821/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240821/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240822')">📅 20240822</div>
+<div id='20240822' class='image-container'>
+<img src='images/20240822/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240822/ex.png</div>
+<img src='images/20240822/ex1.png' alt='ex1.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240822/ex1.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240823')">📅 20240823</div>
+<div id='20240823' class='image-container'>
+<img src='images/20240823/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240823/ex.png</div>
+<img src='images/20240823/rdg.png' alt='rdg.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240823/rdg.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240824')">📅 20240824</div>
+<div id='20240824' class='image-container'>
+<img src='images/20240824/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240824/ex.png</div>
+<img src='images/20240824/dfs.png' alt='dfs.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240824/dfs.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240825')">📅 20240825</div>
+<div id='20240825' class='image-container'>
+<img src='images/20240825/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240825/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240826')">📅 20240826</div>
+<div id='20240826' class='image-container'>
+<img src='images/20240826/img_3.png' alt='img_3.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240826/img_3.png</div>
+<img src='images/20240826/img_5.png' alt='img_5.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240826/img_5.png</div>
+<img src='images/20240826/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240826/ex.png</div>
+<img src='images/20240826/ex2.png' alt='ex2.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240826/ex2.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240827')">📅 20240827</div>
+<div id='20240827' class='image-container'>
+<img src='images/20240827/ex2.png' alt='ex2.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240827/ex2.png</div>
+<img src='images/20240827/ex1.png' alt='ex1.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240827/ex1.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240828')">📅 20240828</div>
+<div id='20240828' class='image-container'>
+<img src='images/20240828/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240828/ex.png</div>
+<img src='images/20240828/ex1.png' alt='ex1.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240828/ex1.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240829')">📅 20240829</div>
+<div id='20240829' class='image-container'>
+<img src='images/20240829/ex2.png' alt='ex2.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240829/ex2.png</div>
+<img src='images/20240829/ex3.png' alt='ex3.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240829/ex3.png</div>
+<img src='images/20240829/ex1.png' alt='ex1.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240829/ex1.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240830')">📅 20240830</div>
+<div id='20240830' class='image-container'>
+<img src='images/20240830/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240830/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240831')">📅 20240831</div>
+<div id='20240831' class='image-container'>
+<img src='images/20240831/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240831/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240901')">📅 20240901</div>
+<div id='20240901' class='image-container'>
+<img src='images/20240901/ex.png' alt='ex.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240901/ex.png</div>
+</div>
+<div class='date-button' onclick="toggle('20240917')">📅 20240917</div>
+<div id='20240917' class='image-container'>
+<img src='images/20240917/lambda-test-conf.png' alt='lambda-test-conf.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/lambda-test-conf.png</div>
+<img src='images/20240917/api-gateway-test2.png' alt='api-gateway-test2.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/api-gateway-test2.png</div>
+<img src='images/20240917/img_3.png' alt='img_3.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/img_3.png</div>
+<img src='images/20240917/api-gateway-init.png' alt='api-gateway-init.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/api-gateway-init.png</div>
+<img src='images/20240917/s3-property.png' alt='s3-property.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/s3-property.png</div>
+<img src='images/20240917/api-gateway-url.png' alt='api-gateway-url.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/api-gateway-url.png</div>
+<img src='images/20240917/s3-upload-file2.png' alt='s3-upload-file2.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/s3-upload-file2.png</div>
+<img src='images/20240917/api-gateway-cors-enable.png' alt='api-gateway-cors-enable.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/api-gateway-cors-enable.png</div>
+<img src='images/20240917/api-gateway-res.png' alt='api-gateway-res.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/api-gateway-res.png</div>
+<img src='images/20240917/s3-static-website-hosting1.png' alt='s3-static-website-hosting1.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/s3-static-website-hosting1.png</div>
+<img src='images/20240917/lambda-code.png' alt='lambda-code.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/lambda-code.png</div>
+<img src='images/20240917/lambda-test-res.png' alt='lambda-test-res.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/lambda-test-res.png</div>
+<img src='images/20240917/s3-static-website-hosting2.png' alt='s3-static-website-hosting2.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/s3-static-website-hosting2.png</div>
+<img src='images/20240917/s3-create-bucket.png' alt='s3-create-bucket.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/s3-create-bucket.png</div>
+<img src='images/20240917/dynamo-table-data.png' alt='dynamo-table-data.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/dynamo-table-data.png</div>
+<img src='images/20240917/lambda-permission.png' alt='lambda-permission.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/lambda-permission.png</div>
+<img src='images/20240917/api-gateway-test.png' alt='api-gateway-test.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/api-gateway-test.png</div>
+<img src='images/20240917/api-gateway-result.png' alt='api-gateway-result.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/api-gateway-result.png</div>
+<img src='images/20240917/api-gateway-cors-setting.png' alt='api-gateway-cors-setting.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/api-gateway-cors-setting.png</div>
+<img src='images/20240917/api-gateway-method-create2.png' alt='api-gateway-method-create2.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/api-gateway-method-create2.png</div>
+<img src='images/20240917/api-gateway-create.png' alt='api-gateway-create.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/api-gateway-create.png</div>
+<img src='images/20240917/s3-public-access.png' alt='s3-public-access.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/s3-public-access.png</div>
+<img src='images/20240917/api-gateway-deploy.png' alt='api-gateway-deploy.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/api-gateway-deploy.png</div>
+<img src='images/20240917/s3-upload-file.png' alt='s3-upload-file.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/s3-upload-file.png</div>
+<img src='images/20240917/lambda.png' alt='lambda.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/lambda.png</div>
+<img src='images/20240917/dynamo-create.png' alt='dynamo-create.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/dynamo-create.png</div>
+<img src='images/20240917/lambda-create-func.png' alt='lambda-create-func.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/lambda-create-func.png</div>
+<img src='images/20240917/s3-hosting.png' alt='s3-hosting.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/s3-hosting.png</div>
+<img src='images/20240917/dynamo-table.png' alt='dynamo-table.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/dynamo-table.png</div>
+<img src='images/20240917/s3-permission.png' alt='s3-permission.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/s3-permission.png</div>
+<img src='images/20240917/dynamo-table-search.png' alt='dynamo-table-search.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/dynamo-table-search.png</div>
+<img src='images/20240917/api-gateway-method-create.png' alt='api-gateway-method-create.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20240917/api-gateway-method-create.png</div>
+</div>
+<div class='date-button' onclick="toggle('20241020')">📅 20241020</div>
+<div id='20241020' class='image-container'>
+<img src='images/20241020/img_1.png' alt='img_1.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20241020/img_1.png</div>
+<img src='images/20241020/img.png' alt='img.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20241020/img.png</div>
+</div>
+<div class='date-button' onclick="toggle('20241108')">📅 20241108</div>
+<div id='20241108' class='image-container'>
+<img src='images/20241108/envelope.png' alt='envelope.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20241108/envelope.png</div>
+</div>
+<div class='date-button' onclick="toggle('20250417')">📅 20250417</div>
+<div id='20250417' class='image-container'>
+<img src='images/20250417/스크린샷 2025-04-17 오후 3.04.53.png' alt='스크린샷 2025-04-17 오후 3.04.53.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/스크린샷 2025-04-17 오후 3.04.53.png</div>
+<img src='images/20250417/스크린샷 2025-04-17 오후 3.44.16.png' alt='스크린샷 2025-04-17 오후 3.44.16.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/스크린샷 2025-04-17 오후 3.44.16.png</div>
+<img src='images/20250417/스크린샷 2025-04-17 오후 4.05.39.png' alt='스크린샷 2025-04-17 오후 4.05.39.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/스크린샷 2025-04-17 오후 4.05.39.png</div>
+<img src='images/20250417/스크린샷 2025-04-17 오후 2.38.19.png' alt='스크린샷 2025-04-17 오후 2.38.19.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/스크린샷 2025-04-17 오후 2.38.19.png</div>
+<img src='images/20250417/스크린샷 2025-04-17 오후 5.32.35.png' alt='스크린샷 2025-04-17 오후 5.32.35.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/스크린샷 2025-04-17 오후 5.32.35.png</div>
+<img src='images/20250417/스크린샷 2025-04-17 오후 3.24.56.png' alt='스크린샷 2025-04-17 오후 3.24.56.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/스크린샷 2025-04-17 오후 3.24.56.png</div>
+<img src='images/20250417/스크린샷 2025-04-17 오후 4.11.45.png' alt='스크린샷 2025-04-17 오후 4.11.45.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/스크린샷 2025-04-17 오후 4.11.45.png</div>
+<img src='images/20250417/스크린샷 2025-04-17 오후 2.29.42.png' alt='스크린샷 2025-04-17 오후 2.29.42.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/스크린샷 2025-04-17 오후 2.29.42.png</div>
+<img src='images/20250417/pull-request-example.png' alt='pull-request-example.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/pull-request-example.png</div>
+<img src='images/20250417/스크린샷 2025-04-17 오후 4.39.55.png' alt='스크린샷 2025-04-17 오후 4.39.55.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/스크린샷 2025-04-17 오후 4.39.55.png</div>
+<img src='images/20250417/스크린샷 2025-04-17 오후 5.34.48.png' alt='스크린샷 2025-04-17 오후 5.34.48.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/스크린샷 2025-04-17 오후 5.34.48.png</div>
+<img src='images/20250417/스크린샷 2025-04-17 오후 2.55.01.png' alt='스크린샷 2025-04-17 오후 2.55.01.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/스크린샷 2025-04-17 오후 2.55.01.png</div>
+<img src='images/20250417/스크린샷 2025-04-26 오후 3.01.25.png' alt='스크린샷 2025-04-26 오후 3.01.25.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/스크린샷 2025-04-26 오후 3.01.25.png</div>
+<img src='images/20250417/스크린샷 2025-04-17 오후 5.58.43.png' alt='스크린샷 2025-04-17 오후 5.58.43.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/스크린샷 2025-04-17 오후 5.58.43.png</div>
+<img src='images/20250417/스크린샷 2025-04-17 오후 2.35.25.png' alt='스크린샷 2025-04-17 오후 2.35.25.png' />
+<div class='path'>https://zhtmr.github.io/static-files-for-posting/images/20250417/스크린샷 2025-04-17 오후 2.35.25.png</div>
+</div>
+
+<script>
+  function toggle(id) {
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+</body>
+</html>
