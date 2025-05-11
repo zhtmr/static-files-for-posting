@@ -1,3 +1,5 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/zhtmr/static-files-for-posting)
+
 # static-files-for-posting
 블로그 포스팅에 쓰일 파일 저장소   
 🔗 https://zhtmr.github.io/static-files-for-posting/
